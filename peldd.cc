@@ -241,10 +241,10 @@ struct Arguments {
   deque<string> search_path;
   bool no_default_search_path {false};
   const array<const char*, 1> mingw64_search_path = {{
-    "/usr/x86_64-w64-mingw32/sys-root/mingw/bin"
+    "/mingw64/bin"
   }};
   const array<const char*, 1> mingw64_32_search_path = {{
-    "/usr/i686-w64-mingw32/sys-root/mingw/bin"
+    "/mingw32/bin"
   }};
   unordered_set<string> whitelist;
   const array<const char*, 16> default_whitelist = {{

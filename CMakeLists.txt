@@ -6,7 +6,9 @@ find_package(Boost 1.54
   COMPONENTS
     system # needed by filesystem, log
     filesystem)
-
+if (WIN32)
+add_definitions("-DWIN32")
+endif()
 add_subdirectory(pe-parse/parser-library)
 
 add_executable(peldd
